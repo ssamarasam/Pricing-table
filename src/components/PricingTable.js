@@ -30,7 +30,7 @@ function PricingTable() {
     {
       plan: "Pro",
       amount: "49",
-      space: "150gb Storage",
+      space: "150GB Storage",
       noOfUsers: "Unlimited Users",
       noOfProject: "Unlimited Public Projects",
       access: "Community Access",
