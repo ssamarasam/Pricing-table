@@ -38,25 +38,31 @@ function PricingCard(props) {
               </span>
               {props.data.access}
             </li>
-            <li className="text-muted">
+            <li className={props.data.plan === "Free" ? "text-muted" : "none"}>
               <span className="fa-li">
                 <i className="fas fa-times"></i>
               </span>
               {props.data.privateProjects}
             </li>
-            <li className="text-muted">
+            <li className={props.data.plan === "Free" ? "text-muted" : "none"}>
               <span className="fa-li">
                 <i className="fas fa-times"></i>
               </span>
               {props.data.support}
             </li>
-            <li className="text-muted">
+            <li className={props.data.plan === "Free" ? "text-muted" : "none"}>
               <span className="fa-li">
                 <i className="fas fa-times"></i>
               </span>
               {props.data.subDomain}
             </li>
-            <li className="text-muted">
+            <li
+              className={
+                props.data.plan === "Free" || props.data.plan === "Plus"
+                  ? "text-muted"
+                  : "none"
+              }
+            >
               <span className="fa-li">
                 <i className="fas fa-times"></i>
               </span>
